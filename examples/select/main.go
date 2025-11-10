@@ -37,7 +37,8 @@ func monitorSystem() <-chan string {
 
 func main() {
 	fmt.Println("=== Select Statement Example ===")
-	fmt.Println("Timeout Handling and Channel Multiplexing\n")
+	fmt.Println("Timeout Handling and Channel Multiplexing")
+	fmt.Println()
 	
 	// Example 1: Timeout handling
 	fmt.Println("Example 1: Fetch with timeout")
@@ -56,7 +57,8 @@ func main() {
 	case result := <-data2:
 		fmt.Printf("✓ Received: %s\n", result)
 	case <-time.After(3 * time.Second):
-		fmt.Println("✗ Timeout waiting for API-2 (expected)\n")
+		fmt.Println("✗ Timeout waiting for API-2 (expected)")
+		fmt.Println()
 	}
 	
 	// Example 2: Multiplexing multiple channels

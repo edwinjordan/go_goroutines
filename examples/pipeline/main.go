@@ -91,7 +91,8 @@ func enrichLogs(entries <-chan LogEntry) <-chan LogEntry {
 
 func main() {
 	fmt.Println("=== Pipeline Pattern Example ===")
-	fmt.Println("Log Processing Pipeline\n")
+	fmt.Println("Log Processing Pipeline")
+	fmt.Println()
 	
 	// Sample log entries
 	rawLogs := []string{
@@ -119,7 +120,8 @@ func main() {
 	}()
 	
 	// Consume pipeline output
-	fmt.Println("Processing logs through pipeline...\n")
+	fmt.Println("Processing logs through pipeline...")
+	fmt.Println()
 	for entry := range stage3 {
 		fmt.Printf("Raw: %s\n", entry.Raw)
 		fmt.Printf("Parsed: %v\n", entry.Parsed)

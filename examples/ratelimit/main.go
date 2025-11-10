@@ -71,7 +71,8 @@ func apiRequest(id int, url string, limiter *RateLimiter, wg *sync.WaitGroup) {
 
 func main() {
 	fmt.Println("=== Rate Limiting Example ===")
-	fmt.Println("API Rate Limiter\n")
+	fmt.Println("API Rate Limiter")
+	fmt.Println()
 	
 	// Create rate limiter: 5 requests per second
 	requestsPerSecond := 5
@@ -79,7 +80,8 @@ func main() {
 	defer limiter.Stop()
 	
 	fmt.Printf("Rate limit: %d requests per second\n", requestsPerSecond)
-	fmt.Println("Sending 15 requests...\n")
+	fmt.Println("Sending 15 requests...")
+	fmt.Println()
 	
 	// Simulate 15 API requests
 	urls := []string{

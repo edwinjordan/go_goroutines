@@ -87,7 +87,8 @@ func (ec *ErrorCollector) GetErrors() []error {
 
 func main() {
 	fmt.Println("=== Error Handling Example ===")
-	fmt.Println("Concurrent Error Aggregation\n")
+	fmt.Println("Concurrent Error Aggregation")
+	fmt.Println()
 	
 	rand.Seed(time.Now().UnixNano())
 	

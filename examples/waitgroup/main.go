@@ -53,7 +53,8 @@ func fetchURL(url string, wg *sync.WaitGroup, results chan<- APIResult) {
 
 func main() {
 	fmt.Println("=== WaitGroup Example ===")
-	fmt.Println("Concurrent API Calls\n")
+	fmt.Println("Concurrent API Calls")
+	fmt.Println()
 	
 	urls := []string{
 		"https://jsonplaceholder.typicode.com/posts/1",

@@ -56,7 +56,8 @@ func aggregator(results <-chan int, done chan<- []int) {
 
 func main() {
 	fmt.Println("=== Fan-out/Fan-in Pattern Example ===")
-	fmt.Println("Distributed Prime Number Calculation\n")
+	fmt.Println("Distributed Prime Number Calculation")
+	fmt.Println()
 	
 	start := time.Now()
 	

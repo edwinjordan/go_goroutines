@@ -49,7 +49,8 @@ func dataProcessor(ctx context.Context, name string) {
 
 func main() {
 	fmt.Println("=== Context-based Cancellation Example ===")
-	fmt.Println("Graceful Shutdown of Goroutines\n")
+	fmt.Println("Graceful Shutdown of Goroutines")
+	fmt.Println()
 	
 	// Example 1: Timeout context
 	fmt.Println("Example 1: Timeout Context")

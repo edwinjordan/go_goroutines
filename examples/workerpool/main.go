@@ -38,7 +38,8 @@ func worker(id int, jobs <-chan Image, results chan<- Image, wg *sync.WaitGroup)
 
 func main() {
 	fmt.Println("=== Worker Pool Pattern Example ===")
-	fmt.Println("Image Processing Simulation\n")
+	fmt.Println("Image Processing Simulation")
+	fmt.Println()
 	
 	// Generate sample images
 	images := []Image{

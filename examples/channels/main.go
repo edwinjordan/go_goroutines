@@ -31,7 +31,8 @@ func consumer(id int, jobs <-chan int, done chan<- bool) {
 
 func main() {
 	fmt.Println("=== Goroutines with Channels Example ===")
-	fmt.Println("Producer-Consumer Pattern\n")
+	fmt.Println("Producer-Consumer Pattern")
+	fmt.Println()
 	
 	// Create channels
 	jobs := make(chan int, 10) // Buffered channel for jobs
